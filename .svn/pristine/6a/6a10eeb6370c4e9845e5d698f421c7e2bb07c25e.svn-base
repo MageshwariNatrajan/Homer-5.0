@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><TestCases>
+<TestCase>
+<Name>MyApron login validation</Name>
+<Status>PASS</Status>
+<Browser>Chrome 48.0.2564.116</Browser>
+<Priority>Priority1</Priority>
+<TimeTaken>00:00:00</TimeTaken>
+<StepsPassed>0</StepsPassed>
+<StepsFailed>0</StepsFailed>
+<ALMTCName>MyApron login validation</ALMTCName>
+<QCSuite/>
+<ReportFolderName>MyApron login validation</ReportFolderName>
+<HTMLReportName>MyApron_login_validation_2016-05-11_11-38-19-AM.html</HTMLReportName>
+</TestCase>
+</TestCases>

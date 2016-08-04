@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><TestCases>
+<TestCase>
+<Name>Search for keyword</Name>
+<Status>PASS</Status>
+<Browser>Chrome 49.0.2623.87</Browser>
+<Priority>Priority1</Priority>
+<TimeTaken>00:00:07</TimeTaken>
+<StepsPassed>1</StepsPassed>
+<StepsFailed>0</StepsFailed>
+<ALMTCName>Search for keyword</ALMTCName>
+<QCSuite/>
+<ReportFolderName>Search for keyword</ReportFolderName>
+<HTMLReportName>Search_for_keyword_2016-04-06_16-00-21-PM.html</HTMLReportName>
+</TestCase>
+</TestCases>
