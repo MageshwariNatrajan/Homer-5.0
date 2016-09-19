@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><TestCases>
+<TestCase>
+<Name>Login to Clear Demand</Name>
+<Status>PASS</Status>
+<Browser>Chrome 48.0.2564.116</Browser>
+<Priority>Priority1</Priority>
+<TimeTaken>00:00:07</TimeTaken>
+<StepsPassed>0</StepsPassed>
+<StepsFailed>0</StepsFailed>
+<ALMTCName>Login to Clear Demand</ALMTCName>
+<QCSuite/>
+<ReportFolderName>Login to Clear Demand</ReportFolderName>
+<HTMLReportName>Login_to_Clear_Demand_2016-05-13_16-33-28-PM.html</HTMLReportName>
+</TestCase>
+</TestCases>

@@ -1,0 +1,5 @@
+projectKey=clearCadProject:build
+serverUrl=http://localhost:9000
+dashboardUrl=http://localhost:9000/dashboard/index/clearCadProject:build
+ceTaskId=AVXNjp52XNYXv_uoK2I3
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AVXNjp52XNYXv_uoK2I3

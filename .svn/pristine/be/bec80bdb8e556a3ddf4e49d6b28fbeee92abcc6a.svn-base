@@ -1,0 +1,75 @@
+package com.homer.dao;
+
+import java.sql.SQLException;
+
+import javax.naming.NamingException;
+
+import org.apache.log4j.Logger;
+
+import com.homedepot.qaportal.commons.errorhandling.exception.QAPortalException;
+import com.homedepot.ta.aa.dao.builder.DAO;
+import com.homedepot.ta.aa.dao.exceptions.QueryException;
+
+/**
+ * This class is used to validate new cadence reflected in the databse for the
+ * chosen sku number and store
+ * 
+ * @author MXN8002
+ *
+ */
+
+public class DataSetterCreateRequest {
+	final static String BANK = "java:comp/env/jdbc/DB2Z.PR1.001";
+	final static int ZERO = 0;
+	final static int HUNDRED = 100;
+
+	public static Logger logger = Logger
+			.getLogger(DataSetterCreateRequest.class);
+
+	/**
+	 * This method is used to retrieve the rows affected by the insertion of new
+	 * cadence to the specified sku and store number.
+	 */
+
+	public static int cleanUp(String skuNumber, String storeNumber,
+			int newCadence) throws QueryException, NamingException {
+
+		logger.info("DataSetterCreateRequest::cleanUp() starts-->");
+		DatabaseContextLoader.getInstance();
+		DataSetterCreateRequest dataReq = new DataSetterCreateRequest();
+		int rowCount = dataReq.getCadenceStatus(skuNumber, storeNumber,
+				newCadence);
+		if (rowCount > 0) {
+
+			logger.info("New cadence updated successfully");
+		}
+		logger.info("DataSetterCreateRequest::cleanUp() ends-->");
+		return rowCount;
+
+	}
+
+	/**
+	 * This method is used to return the rows count affected by updating new
+	 * cadence value for the given store number and sku number
+	 * @throws QueryException 
+	 * @throws NumberFormatException 
+	 */
+
+	public int getCadenceStatus(String skuNumber, String storeNumber,
+			int newCadence) throws NumberFormatException, QueryException {
+		logger.info("DataSetterCreateRequest::getCadenceStatus() starts-->");
+
+		int count = DAO
+				.useJNDI(BANK)
+				.setSQL("SELECT  count(str_nbr)"
+						+ " FROM qa1mm.SKU_STR_CDNC_H T1 "
+						+ " WHERE str_nbr = " + Integer.parseInt(storeNumber)
+						+ " and SKU_nbr = " + Integer.parseInt(skuNumber)
+						+ " and cdnc_len_nbr = " + newCadence)
+				.get(Integer.class);
+		logger.info("count of rows affected by new cadence" + count);
+		logger.info("DataSetterCreateRequest::getCadenceStatus() ends-->");
+		return count;
+	}
+
+}
