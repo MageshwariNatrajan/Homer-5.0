@@ -146,22 +146,22 @@
     </pluginRepository>
   </pluginRepositories>
   <build>
-    <sourceDirectory>C:\Homer\Homer 5.0\src\main\java</sourceDirectory>
-    <scriptSourceDirectory>C:\Homer\Homer 5.0\src\main\scripts</scriptSourceDirectory>
-    <testSourceDirectory>C:\Homer\Homer 5.0\src\test\java</testSourceDirectory>
-    <outputDirectory>C:\Homer\Homer 5.0\target\classes</outputDirectory>
-    <testOutputDirectory>C:\Homer\Homer 5.0\target\test-classes</testOutputDirectory>
+    <sourceDirectory>C:\jenkins install\jobs\clearcadenceGit\workspace\src\main\java</sourceDirectory>
+    <scriptSourceDirectory>C:\jenkins install\jobs\clearcadenceGit\workspace\src\main\scripts</scriptSourceDirectory>
+    <testSourceDirectory>C:\jenkins install\jobs\clearcadenceGit\workspace\src\test\java</testSourceDirectory>
+    <outputDirectory>C:\jenkins install\jobs\clearcadenceGit\workspace\target\classes</outputDirectory>
+    <testOutputDirectory>C:\jenkins install\jobs\clearcadenceGit\workspace\target\test-classes</testOutputDirectory>
     <resources>
       <resource>
-        <directory>C:\Homer\Homer 5.0\src\main\resources</directory>
+        <directory>C:\jenkins install\jobs\clearcadenceGit\workspace\src\main\resources</directory>
       </resource>
     </resources>
     <testResources>
       <testResource>
-        <directory>C:\Homer\Homer 5.0\src\test\resources</directory>
+        <directory>C:\jenkins install\jobs\clearcadenceGit\workspace\src\test\resources</directory>
       </testResource>
     </testResources>
-    <directory>C:\Homer\Homer 5.0\target</directory>
+    <directory>C:\jenkins install\jobs\clearcadenceGit\workspace\target</directory>
     <finalName>Homer-0.0.1-SNAPSHOT</finalName>
     <pluginManagement>
       <plugins>
@@ -325,7 +325,7 @@
               <goal>site</goal>
             </goals>
             <configuration>
-              <outputDirectory>C:\Homer\Homer 5.0\target\site</outputDirectory>
+              <outputDirectory>C:\jenkins install\jobs\clearcadenceGit\workspace\target\site</outputDirectory>
               <reportPlugins>
                 <reportPlugin>
                   <groupId>org.apache.maven.plugins</groupId>
@@ -341,7 +341,7 @@
               <goal>deploy</goal>
             </goals>
             <configuration>
-              <outputDirectory>C:\Homer\Homer 5.0\target\site</outputDirectory>
+              <outputDirectory>C:\jenkins install\jobs\clearcadenceGit\workspace\target\site</outputDirectory>
               <reportPlugins>
                 <reportPlugin>
                   <groupId>org.apache.maven.plugins</groupId>
@@ -352,7 +352,7 @@
           </execution>
         </executions>
         <configuration>
-          <outputDirectory>C:\Homer\Homer 5.0\target\site</outputDirectory>
+          <outputDirectory>C:\jenkins install\jobs\clearcadenceGit\workspace\target\site</outputDirectory>
           <reportPlugins>
             <reportPlugin>
               <groupId>org.apache.maven.plugins</groupId>
@@ -379,7 +379,7 @@
        <developerConnection>scm:svn:https://svn.homedepot.com/svn/MerchandiseManagement/POC/HomerClearCadence/Homer</developerConnection>
    </scm>
   <reporting>
-    <outputDirectory>C:\Homer\Homer 5.0\target\site</outputDirectory>
+    <outputDirectory>C:\jenkins install\jobs\clearcadenceGit\workspace\target\site</outputDirectory>
   </reporting>
   <distributionManagement>
     <repository>
